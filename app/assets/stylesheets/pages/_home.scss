@@ -1,1 +1,15 @@
-// Specific CSS for your home-page
+.container {
+  display: flex;
+}
+
+.tags h4 {
+  display: inline-block;
+  padding: 15px;
+
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+
+}
