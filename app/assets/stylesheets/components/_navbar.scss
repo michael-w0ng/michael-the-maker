@@ -8,6 +8,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+    // position: fixed;
+    // top: 100vh; //height of the div
+    // left: 0;
+    // z-index: 1;
+    // width: 100%;
+    // // border-bottom: 1px solid #000;
+    // // padding: 10px 0px 0px 3%;
+    // // background:#FFFFFF;
+    // // font-size: 85% !important;
+    // -webkit-transition: bottom 0.5s;
+    // transition: bottom 0.5s;
 }
 
 /* Logo */
@@ -78,7 +90,7 @@
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -86,4 +98,22 @@
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
+}
+
+// #mydiv{
+//     position: fixed;
+//     top: -100px; //height of the div
+//     left: 0;
+//     z-index: 1;
+//     width: 100%;
+//     border-bottom: 1px solid #000;
+//     padding: 10px 0px 0px 3%;
+//     background:#FFFFFF;
+//     font-size: 85% !important;
+//     -webkit-transition: top 0.5s;
+//     transition: top 0.5s;
+// }
+
+navbar-wagon.fixed {
+    top: 0;
 }

@@ -1,23 +1,30 @@
-<div class="container">
-  <div class="row">
-    <h1>Michael Wong</h1>
-    <div class="tags">
-      <h4>Fullstack Developer</h4>
-      <h4> | </h4>
-      <h4>Maker</h4>
-      <h4> | </h4>
-      <h4>Educator</h4>
+<div id="banner">
+  <img class="mySlides" src="Banner.JPG">
+  <img class="mySlides" src="coding.jpg">
+  <img class="mySlides" src="teaching.jpg">
+
+  <div class="container">
+    <div class="row">
+      <h1>Michael Wong</h1>
+      <div class="tags">
+        <h4>Fullstack Developer</h4>
+        <h4> | </h4>
+        <h4>Maker</h4>
+        <h4> | </h4>
+        <h4>Educator</h4>
+      </div>
     </div>
   </div>
 </div>
-  <div class="container images">
-    <%= image_tag "SMD.png", height: 350, id: 'home-image'%>
-    <%= image_tag "On_Purpose.png", height: 350, id: 'home-image' %>
-  </div>
 
 <%= render 'shared/navbar' %>
 
-<div class="container">
+<div class="container images">
+  <%= image_tag "SMD.png", height: 350, class: "home-image"%>
+  <%= image_tag "On_Purpose.png", height: 350, class: "home-image" %>
+</div>
+
+<div class="container info">
   <div class="row">
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

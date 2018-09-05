@@ -1,15 +1,44 @@
 .container {
   display: flex;
+
+}
+
+
+#banner {
+  // background-image: url("Banner.JPG");
+  // background-image: url("coding.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
 .tags h4 {
   display: inline-block;
   padding: 15px;
-
+  justify-content: space-between;
 }
 
 .image {
   display: flex;
   justify-content: center;
+  // justify-content: space-between;
 
+}
+
+.home-image {
+  padding: 15px;
+
+}
+
+.info {
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+h4 {
+  color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
 }
