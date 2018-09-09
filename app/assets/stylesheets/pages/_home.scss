@@ -2,9 +2,9 @@
 //   display: flex;
 //   position: relative;
 // }
-.site-wrapper {
-   overflow-x: hidden;
-}
+// .site-wrapper {
+//    overflow-x: hidden;
+// }
 
 .header-container {
   display: flex;
@@ -14,7 +14,7 @@
 
 #banner {
   // background-image: url("Banner.JPG");
-  background-image: url("workshop.jpg");
+  background-image: url("https://res.cloudinary.com/dfowktpgu/image/upload/v1536511669/workshop.jpg");
   opacity: 0.7;
   background-size: cover;
   height: 100vh;
