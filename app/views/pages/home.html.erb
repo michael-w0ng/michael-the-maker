@@ -1,152 +1,108 @@
-<div id="banner">
-<!--   <div class="imgscroll">
-    <img src="/assets/images/workshop.jpg" style="width:100%">
-    <%#= image_tag "workshop.jpg" %>
-  </div>
-  <div class="imgscroll>
-    <img src="/assets/images/coding.jpg" style="width:100%">
-    <%#= image_tag "coding.jpg" %>
-  </div>
-  <div class="imgscroll>
-    <img src="/assets/images/teaching.jpg" style="width:100%">
-    <%#= image_tag "teaching.jpg" %>
-  </div> -->
+<div class="site-wrapper">
 
-  <div class="header-container">
-    <div class="row intro">
-      <h1>Michael Wong</h1>
-      <div class="tags">
-<!--         <h4>Fullstack Developer</h4>
- -->    <h4> | </h4>
-        <h4>Maker</h4>
-        <h4> | </h4>
-<!--         <h4>Educator</h4>
- -->      </div>
+  <div id="banner">
+    <div class="header-container">
+      <div class="row intro">
+        <h1>Michael Wong</h1>
+        <br>
+          <div class="content">
+            <div class="content__container">
+              <ul class="content__container__list">
+                <li class="content__container__list__item">| Fullstack Developer |</li>
+                <li class="content__container__list__item">| Silversmith |</li>
+                <li class="content__container__list__item">| Jeweller |</li>
+                <li class="content__container__list__item">| Educator |</li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div>
-  <%= render 'shared/navbar' %>
+  <div>
+    <%= render 'shared/navbar' %>
 
-
-    <div class="container info">
-      <div class="row">
-        <h3>Hi! I’m Michael 👋 - a Junior Fullstack Developer 💻, Silversmith 🔨, and Educator 👨‍🏫</h3>
-
-        <div class="skill-cards">
-          <div class="skills col-xs-6">
-            <h3>Coding</h3>
-              <ul>
-                <h5>Ruby on Rails</h5>
-                <h5>Javascript</h5>
-                <h5>CSS</h5>
-                <h5>HTML</h5>
-                <h5>SQL</h5>
-              </ul>
-          </div>
-          <div class="skills col-xs-6">
-            <h3>Making</h3>
-            <ul>
-              <h5>Forming</h5>
-              <h5>Fabricating</h5>
-              <h5>Raising</h5>
-              <h5>Spinning</h5>
-              <h5>Lathe Turning</h5>
-            </ul>
+      <div class="container info">
+        <div>
+          <div class="skill-cards">
+            <%#= link_to "../pages/coding" do %>
+            <div class="skills col-xs-12 col-md-3" >
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-square fa-stack-2x" style="color:Tomato"></i>
+                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3>Coding</h3>
+                <p>A junior fullstack developer with practical knowledge of Ruby on Rails, Javascript, HTML, CSS, and SQL.</p>
+            </div>
+            <%# end %>
+            <%#= link_to "../pages/making" do %>
+            <div class="skills col-xs-12 col-md-3">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-square fa-stack-2x" style="color:Tomato"></i>
+                <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3>Making</h3>
+                <p>A trained Silversmith and Jeweller with a strong technical background in large and small scale fabrication and forming.</p>
+            </div>
+            <%# end %>
+            <%#= link_to "../pages/teaching" do %>
+            <div class="skills col-xs-12 col-md-3">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-square fa-stack-2x" style="color:Tomato"></i>
+                <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+              </span>
+              <h3>Teaching</h3>
+                <p>An educator with international experience in technical, craft-based education.</p>
+            </div>
+            <%# end %>
           </div>
         </div>
       </div>
+
+
+
+    <div class="container images">
+      <div>
+        <h3>Folio</h3>
+        <a href="http://swapmydosh.com">
+          <%= image_tag "SMD.png", height: 350, class: "home-image SMD"%>
+        </a>
+        <%= image_tag "On_Purpose.png", height: 350, class: "home-image" %>
+      </div>
     </div>
 
+    <div class="container info">
+      <div class="row">
 
-  <div class="container images">
-    <%= image_tag "SMD.png", height: 350, class: "home-image SMD"%>
-    <%= image_tag "On_Purpose.png", height: 350, class: "home-image" %>
-  </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  <div class="container info">
-    <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
   </div>
-
 </div>
-
-
