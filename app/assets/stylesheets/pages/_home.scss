@@ -1,18 +1,12 @@
-// .container {
-//   display: flex;
-//   position: relative;
-// }
+
 .site-wrapper {
-   // overflow-x: hidden;
    width: 100vw;
 }
-
 
 .header-container {
   display: flex;
   position: relative;
 }
-
 
 #banner {
   // background-image: url("Banner.JPG");
@@ -24,7 +18,6 @@
 }
 
 .intro {
-  // padding: 60px;
   position: absolute;
   top: 500px;
   left: 70px;
@@ -35,22 +28,12 @@
   text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
   font-size: 50px;
   left: 80px;
+  width: 600px;
 }
-
-
-// .tags h4 {
-//   display: inline-block;
-//   padding-right: 15px;
-//   justify-content: space-between;
-//    color: #fefeff;
-//      text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-// }
 
 .image {
   display: flex;
   justify-content: center;
-  // justify-content: space-between;
-
 }
 
 .home-image {
@@ -79,54 +62,40 @@
   justify-content: center;
   text-align: center;
   background-color: rgba(58, 80, 105, 0.35);
-  // margin: 20px;
-  // width: 340px;
   border-radius: 5px;
   min-height: 40vh;
   padding: 20px;
   margin: 20px 10px;
   min-width: 25vw;
   max-width: 70vw
-
-  // min-width: 30vw;
 }
 
 .skills h3 {
   margin-top: 2px;
 }
 
-// .skills p {
-//   max-width: 25vw;
-//    justify-content: center;
-//   text-align: center;
-// }
-
 body {
     overflow-x: hidden;
 }
 
 .content {
-  padding-top: 15px;
-  position: absolute;
-  left: 160%;
-  transform: translate(-50%, -50%);
   overflow:hidden;
   font-size: 40px;
   line-height: 40px;
   color: #fefeff;
-  padding: 40px;
-  width: 100vw;
+  width: 600px;
 
   &__container {
     overflow: hidden;
     height: 80px;
     width: 1000px;
-    padding: 0 30px;
+    padding: 0 70px;
+    top: 50px;
     &:before {
       content: '| Maker';
       text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
       left: 80px;
-      margin-left: -40px;
+      margin-left: -80px;
     }
 
     &:after, &:before {
@@ -146,7 +115,6 @@ body {
     &__list {
       color: #fefeff;
       text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-      // margin-top: 20px;
       padding-left: 110px;
       text-align: left;
       list-style: none;
@@ -159,7 +127,8 @@ body {
       animation-direction: normal;
       &__item {
         line-height:80px;
-        margin:0;
+        margin: 0px;
+        margin-left: -40px;
       }
       &:after {
       content: '|';
@@ -169,10 +138,7 @@ body {
     }
   }
 }
-// @-webkit-keyframes opacity {
-//   0%, 100% {opacity:0;}
-//   50% {opacity:1;}
-// }
+
 @-webkit-keyframes change {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
@@ -181,10 +147,7 @@ body {
   66.64%,79.3% {transform:translate3d(0,-50%,0);}
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
-// @-o-keyframes opacity {
-//   0%, 100% {opacity:0;}
-//   50% {opacity:1;}
-// }
+
 @-o-keyframes change {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
@@ -193,10 +156,7 @@ body {
   66.64%,79.3% {transform:translate3d(0,-50%,0);}
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
-// @-moz-keyframes opacity {
-//   0%, 100% {opacity:0;}
-//   50% {opacity:1;}
-// }
+
 @-moz-keyframes change {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
@@ -205,10 +165,7 @@ body {
   66.64%,79.3% {transform:translate3d(0,-50%,0);}
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
-// @keyframes opacity {
-//   0%, 100% {opacity:0;}
-//   50% {opacity:1;}
-// }
+
 @keyframes change {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
@@ -221,45 +178,20 @@ body {
 
 // Responsive
 
-// @media only screen and (min-width: 801px) and (max-width: 1000px) {
-//   .content {
-//     width: 770px;
-//   }
-// }
-
-@media only screen and (max-width: 400px){
-
-  // .intro {
-  // // padding: 60px;
-  // position: absolute;
-  // top: 200px;
-  // left: 70px;
-  // }
-
-  .skills {
-    // margin: 20px 0px;
-    // padding: 10px;
-    // width:96%;
-    // padding:0 2%;
-  }
-}
 
 @media only screen and (min-width: 551px) and (max-width: 800px) {
    .content {
-    // padding-top: 15px;
     position: absolute;
-    left: 100%;
-    transform: translate(-50%, -50%);
+    left: -140px;
     overflow:hidden;
     font-size: 40px;
     line-height: 40px;
     color: #fefeff;
-    padding: 40px;
+    top: 80px;
     &__container {
       overflow: hidden;
       height: 80px;
       width: 1000px;
-      // padding: 0 75px;
       &:before {
         content: '';
         left: 80px;
@@ -268,34 +200,24 @@ body {
 
   }
   .intro {
-  // padding: 60px;
   position: absolute;
   top: 400px;
   left: 40px;
-  }
-  html, body {
-    overflow-x: hidden;
   }
 }
 @media only screen and (max-width: 550px) {
 
    .content {
-    // padding-top: 15px;
     position: absolute;
-    left: 23%;
-    // transform: translate(-50%, -50%);
+    left: -140px;
     overflow:hidden;
-    font-size: 30px;
+    font-size: 27px;
     line-height: 40px;
     color: #fefeff;
-    padding: 40px;
     width: 500px;
-
+    top: 80px;
     &__container {
       overflow: hidden;
-      // height: 80px;
-      // width: 1000px;
-      // padding: 0 75px;
       width: 500px;
       &:before {
         content: '';
@@ -309,12 +231,56 @@ body {
 
   }
    .intro {
-  // padding: 60px;
-  position: absolute;
   top: 400px;
   left: 40px;
+
   }
-  // html, body {
-  //   overflow-x: hidden;
-  // }
 }
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  // .content {
+  //     position: absolute;
+  //     left: -140px;
+  //     overflow:hidden;
+  //     font-size: 27px;
+  //     line-height: 40px;
+  //     color: #fefeff;
+      width: 500px;
+  //     top: 80px;
+  //     &__container {
+  //       overflow: hidden;
+  //       width: 500px;
+  //       &:before {
+  //         content: '';
+  //         left: 80px;
+  //       }
+  //       &__item {
+  //         line-height:80px;
+  //         margin:0;
+  //       }
+  //     }
+
+  //   }
+  //    .intro {
+  //   // // padding: 60px;
+  //   // position: absolute;
+  //   top: 200px;
+  //   left: 40px;
+        width: 500px;
+  //   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
