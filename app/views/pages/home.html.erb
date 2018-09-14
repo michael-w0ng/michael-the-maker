@@ -22,7 +22,7 @@
 
   <div>
     <%= render 'shared/navbar' %>
-
+    <div class="background">
       <div class="container-cards info">
         <!-- <div> -->
           <div class="skill-cards row">
@@ -116,9 +116,25 @@
       </div>
     </div>
 
+    <div class="container">
+      <h3>Contact</h3>
+      <div class="contact row">
+        <div class="contact-image">
+          <%= image_tag("https://res.cloudinary.com/dfowktpgu/image/upload/v1536933567/Image_from_iOS_2.jpg", height: 350, class: "face")%>
+        </div>
+        <div class="contact-info">
+          <p class="contact-p">Reach out via <a href="https://www.linkedin.com/in/michael-w0ng" target="_blank">LinkedIn</a> or <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">Instagram</a> otherwise <a href="mailto:mail@michaelwongsilversmith.com">Email Me</a>!</p>
+          <div>
+            <%= link_to "Download CV", download_pdf_path  %>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div>
       <%= render 'shared/footer' %>
     </div>
+  </div>
 
   </div>
 </div>

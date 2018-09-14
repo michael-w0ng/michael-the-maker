@@ -1,3 +1,9 @@
+.background {
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+  min-height: 500px;
+}
+
 .container {
   margin: 0 auto;
   width: 80%;
@@ -67,6 +73,7 @@
   justify-content: center;
   vertical-align: center;
   width: 80vw;
+  color: white;
 }
 
 .skills {
@@ -85,8 +92,37 @@
   margin-top: 2px;
 }
 
+h3 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
 body {
     overflow-x: hidden;
+}
+
+.contact {
+  position: relative;
+  padding-top: 15px;
+}
+
+.contact-image {
+  display: inline-block;
+}
+
+.contact-info {
+  display: inline-block;
+  padding-left: 14px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.face {
+  border-radius: 50%;
+  height: 120px;
 }
 
 .content {
@@ -311,44 +347,42 @@ body {
     margin: 0 auto;
     width: 100%;
   }
+  .contact {
+    position: none;
+    padding-top: 15px;
+  }
+  .contact-image {
+    display: block;
+  }
+  .contact-info {
+    display: block;
+    padding-top: 10px;
+    padding-left: 14px;
+    position: unset;
+  }
 }
 
-// @media only screen
-// and (min-device-width : 768px)
-// and (max-device-width : 1024px) {
-//   // .content {
-//   //     position: absolute;
-//   //     left: -140px;
-//   //     overflow:hidden;
-//   //     font-size: 27px;
-//   //     line-height: 40px;
-//   //     color: #fefeff;
-//       width: 500px;
-//   //     top: 80px;
-//   //     &__container {
-//   //       overflow: hidden;
-//   //       width: 500px;
-//   //       &:before {
-//   //         content: '';
-//   //         left: 80px;
-//   //       }
-//   //       &__item {
-//   //         line-height:80px;
-//   //         margin:0;
-//   //       }
-//   //     }
-
-//   //   }
-//   //    .intro {
-//   //   // // padding: 60px;
-//   //   // position: absolute;
-//   //   top: 200px;
-//   //   left: 40px;
-//         width: 500px;
-//   //   }
-// }
-
-
+@media (orientation: landscape) {
+ .intro {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  }
+  .contact {
+    position: none;
+    padding-top: 15px;
+  }
+  .contact-image {
+    display: block;
+    padding-left: 20px;
+  }
+  .contact-info {
+    display: block;
+    padding-top: 10px;
+    padding-left: 14px;
+    position: unset;
+  }
+}
 
 
 
