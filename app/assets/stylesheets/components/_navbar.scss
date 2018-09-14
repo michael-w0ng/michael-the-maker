@@ -97,6 +97,9 @@ navbar-wagon.fixed {
   .navbar-wagon {
     background: white;
   }
+  .sticky {
+  color: black;
+}
 }
 
 @media only screen and (min-width: 551px) and (max-width: 800px) {
@@ -104,6 +107,7 @@ navbar-wagon.fixed {
   position: sticky;
   top: 0;
   width: 100%;
+  color: black;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -112,5 +116,6 @@ navbar-wagon.fixed {
    top: 0;
    width: 100%;
    z-index: 1000;
+   color: black;
  }
 }
