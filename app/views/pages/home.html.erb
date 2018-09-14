@@ -23,118 +23,117 @@
   <div>
     <%= render 'shared/navbar' %>
     <div class="background">
-      <div class="container-cards info">
-        <!-- <div> -->
-          <div class="skill-cards row">
-            <%#= link_to "../pages/coding" do %>
-            <div class="skills col-xs-12 col-md-3 col-lg-3" >
-              <span class="fa-stack fa-3x">
-                <!-- <i class="fa fa-square fa-stack-2x" style="color:none"></i> -->
-                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Coding</h3>
-                <p>A junior fullstack developer with practical knowledge of Ruby on Rails, Javascript, HTML, CSS, and SQL.</p>
+<!--       <div class="skills-background">
+ -->        <div class="container container-cards info">
+            <div class="skill-cards row">
+              <div class="skills col-xs-12 col-md-3 col-lg-3" >
+                <span class="fa-stack fa-3x">
+                  <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>Coding</h3>
+                  <p>A junior fullstack developer with practical knowledge of Ruby on Rails, Javascript, HTML, CSS, and SQL.</p>
+              </div>
+              <div class="skills col-xs-12 col-md-3 col-lg-3">
+                <span class="fa-stack fa-3x">
+                  <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>Making</h3>
+                  <p>A trained Silversmith and Jeweller with a strong technical background in large and small scale fabrication and forming.</p>
+              </div>
+              <div class="skills col-xs-12 col-md-3 col-lg-3">
+                <span class="fa-stack fa-3x">
+                  <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>Teaching</h3>
+                  <p>An educator with international experience in technical, craft-based education.</p><br>
+              </div>
             </div>
-            <%# end %>
-            <%#= link_to "../pages/making" do %>
-            <div class="skills col-xs-12 col-md-3 col-lg-3">
-              <span class="fa-stack fa-3x">
-               <!--  <i class="fa fa-square fa-stack-2x" style="color:Tomato"></i> -->
-                <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Making</h3>
-                <p>A trained Silversmith and Jeweller with a strong technical background in large and small scale fabrication and forming.</p>
+        </div>
+      <!-- </div>
+ -->
+      <br>
+      <br>
+
+      <div class="container images">
+        <div>
+          <h3>Folio</h3>
+          <div class="image-background">
+            <div class="scrolling-wrapper">
+              <div class="image-card">
+                <a href="http://swapmydosh.com" target="_blank">
+                  <%= image_tag("SMD.png", height: 350, class: "home-image SMD")%>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://boards-r-us.herokuapp.com/" target="_blank">
+                  <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536929772/Screen_Shot_2018-09-14_at_2.55.42_pm.png", height: 350, class: "home-image" %>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+                  <%= image_tag "On_Purpose.png", height: 350, class: "home-image" %>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+                  <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928820/ON_PURPOSE_046_copy.jpg", height: 350, class: "home-image" %>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+                  <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928816/ON_PURPOSE_039_copy.jpg", height: 350, class: "home-image" %>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+                  <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928805/ON_PURPOSE_015_copy.jpg", height: 350, class: "home-image" %>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+                  <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928805/ON_PURPOSE_008_copy.jpg", height: 350, class: "home-image" %>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+                  <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928816/ON_PURPOSE_044_copy.jpg", height: 350, class: "home-image" %>
+                </a>
+              </div>
+              <div class="image-card">
+                <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+                  <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928818/ON_PURPOSE_045_copy.jpg", height: 350, class: "home-image" %>
+                </a>
+              </div>
             </div>
-            <%# end %>
-            <%#= link_to "../pages/teaching" do %>
-            <div class="skills col-xs-12 col-md-3 col-lg-3">
-              <span class="fa-stack fa-3x">
-                <!-- <i class="fa fa-square fa-stack-2x" style="color:Tomato"></i> -->
-                <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Teaching</h3>
-                <p>An educator with international experience in technical, craft-based education.</p><br>
-            </div>
-            <%# end %>
           </div>
-       <!--  </div> -->
+        </div>
       </div>
 
+      <br>
+      <br>
 
+      <div class="container">
+        <h3>Contact</h3>
+        <div class="contact row">
+          <div class="contact-image">
+            <%= image_tag("https://res.cloudinary.com/dfowktpgu/image/upload/v1536933567/Image_from_iOS_2.jpg", height: 350, class: "face")%>
+          </div>
+          <div class="contact-info">
+            <p class="contact-p">Reach out via <a href="https://www.linkedin.com/in/michael-w0ng" target="_blank">LinkedIn</a> or <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">Instagram</a> otherwise <a href="mailto:mail@michaelwongsilversmith.com">Email Me</a>!</p>
+            <div>
+              <%= link_to "Download CV", download_pdf_path  %>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="container images">
+      <br>
+      <br>
+
       <div>
-        <h3>Folio</h3>
-        <div class="scrolling-wrapper">
-          <div class="image-card">
-            <a href="http://swapmydosh.com" target="_blank">
-              <%= image_tag("SMD.png", height: 350, class: "home-image SMD")%>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://boards-r-us.herokuapp.com/" target="_blank">
-              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536929772/Screen_Shot_2018-09-14_at_2.55.42_pm.png", height: 350, class: "home-image" %>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
-              <%= image_tag "On_Purpose.png", height: 350, class: "home-image" %>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
-              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928820/ON_PURPOSE_046_copy.jpg", height: 350, class: "home-image" %>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
-              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928816/ON_PURPOSE_039_copy.jpg", height: 350, class: "home-image" %>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
-              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928805/ON_PURPOSE_015_copy.jpg", height: 350, class: "home-image" %>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
-              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928805/ON_PURPOSE_008_copy.jpg", height: 350, class: "home-image" %>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
-              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928816/ON_PURPOSE_044_copy.jpg", height: 350, class: "home-image" %>
-            </a>
-          </div>
-          <div class="image-card">
-            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
-              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928818/ON_PURPOSE_045_copy.jpg", height: 350, class: "home-image" %>
-            </a>
-          </div>
-
-        </div>
+        <%= render 'shared/footer' %>
       </div>
     </div>
-
-    <div class="container">
-      <h3>Contact</h3>
-      <div class="contact row">
-        <div class="contact-image">
-          <%= image_tag("https://res.cloudinary.com/dfowktpgu/image/upload/v1536933567/Image_from_iOS_2.jpg", height: 350, class: "face")%>
-        </div>
-        <div class="contact-info">
-          <p class="contact-p">Reach out via <a href="https://www.linkedin.com/in/michael-w0ng" target="_blank">LinkedIn</a> or <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">Instagram</a> otherwise <a href="mailto:mail@michaelwongsilversmith.com">Email Me</a>!</p>
-          <div>
-            <%= link_to "Download CV", download_pdf_path  %>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <%= render 'shared/footer' %>
-    </div>
-  </div>
 
   </div>
 </div>

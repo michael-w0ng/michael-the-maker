@@ -2,11 +2,13 @@
   background-color: #013A6B;
   background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
   min-height: 500px;
+  padding-top: 100px;
 }
 
 .container {
   margin: 0 auto;
   width: 80%;
+  padding-top: 80px;
 }
 
 .container-cards {
@@ -123,6 +125,22 @@ body {
 .face {
   border-radius: 50%;
   height: 120px;
+}
+
+.skills-background {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.image-background {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 .content {
