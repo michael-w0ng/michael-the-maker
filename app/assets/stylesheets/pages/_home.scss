@@ -1,11 +1,17 @@
 .container {
-  padding-left: 70px !important;
-  padding-right: 70px !important;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container-cards {
+    margin: 0 auto;
+    width: 100%;
 }
 
 
 .site-wrapper {
    width: 100vw;
+   // background-color: black;
 }
 
 .header-container {
@@ -14,8 +20,6 @@
 }
 
 #banner {
-  // background-image: url("Banner.JPG");
-  background-image: url("https://res.cloudinary.com/dfowktpgu/image/upload/v1536511669/workshop.jpg");
   opacity: 0.7;
   background-size: cover;
   height: 100vh;
@@ -51,7 +55,6 @@
 
 .colours {
   background-color: grey;
-
 }
 
 .info {
@@ -63,6 +66,7 @@
   display: inline-block;
   justify-content: center;
   vertical-align: center;
+  width: 80vw;
 }
 
 .skills {
@@ -74,7 +78,7 @@
   padding: 20px;
   margin: 20px 10px;
   min-width: 25vw;
-  max-width: 70vw
+  max-width: 70vw;
 }
 
 .skills h3 {
@@ -183,6 +187,27 @@ body {
 }
 
 
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .image-card {
+    display: inline-block;
+    padding-bottom:15px;
+    opacity: 0.8;
+  }
+}
+
+.image-card:hover{
+  opacity: 1;
+  // margin-top:-50px;
+  // .image-card-outline{
+  // height: 260px;
+// }
+}
+
 // Responsive
 
 
@@ -211,6 +236,25 @@ body {
   top: 400px;
   left: 40px;
   }
+  // .container {
+  //  padding-left: 50px !important;
+  //  padding-right: 50px !important;
+  // }
+  .skills {
+  min-width: 15vw;
+  max-width: 70vw;
+  }
+  .skill-cards {
+    width: 100vw;
+  }
+  .container-cards {
+    margin: 0 auto;
+    width: 92%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 550px) {
 
@@ -221,7 +265,7 @@ body {
     font-size: 27px;
     line-height: 40px;
     color: #fefeff;
-    width: 500px;
+    width: 490px;
     top: 80px;
     &__container {
       overflow: hidden;
@@ -240,44 +284,69 @@ body {
    .intro {
   top: 400px;
   left: 40px;
-
+  }
+  .container {
+   padding-left: 50px !important;
+   padding-right: 50px !important;
+  }
+  .skills {
+    min-width: 15vw;
+    max-width: 70vw;
+  }
+  .intro h1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    font-size: 50px;
+    left: 80px;
+    width: 350px;
+  }
+  .skill-cards {
+    width: 80vw;
+  }
+  .container-cards {
+    margin: 0 auto;
+    width: 92%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-  // .content {
-  //     position: absolute;
-  //     left: -140px;
-  //     overflow:hidden;
-  //     font-size: 27px;
-  //     line-height: 40px;
-  //     color: #fefeff;
-      width: 500px;
-  //     top: 80px;
-  //     &__container {
-  //       overflow: hidden;
-  //       width: 500px;
-  //       &:before {
-  //         content: '';
-  //         left: 80px;
-  //       }
-  //       &__item {
-  //         line-height:80px;
-  //         margin:0;
-  //       }
-  //     }
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px) {
+//   // .content {
+//   //     position: absolute;
+//   //     left: -140px;
+//   //     overflow:hidden;
+//   //     font-size: 27px;
+//   //     line-height: 40px;
+//   //     color: #fefeff;
+//       width: 500px;
+//   //     top: 80px;
+//   //     &__container {
+//   //       overflow: hidden;
+//   //       width: 500px;
+//   //       &:before {
+//   //         content: '';
+//   //         left: 80px;
+//   //       }
+//   //       &__item {
+//   //         line-height:80px;
+//   //         margin:0;
+//   //       }
+//   //     }
 
-  //   }
-  //    .intro {
-  //   // // padding: 60px;
-  //   // position: absolute;
-  //   top: 200px;
-  //   left: 40px;
-        width: 500px;
-  //   }
-}
+//   //   }
+//   //    .intro {
+//   //   // // padding: 60px;
+//   //   // position: absolute;
+//   //   top: 200px;
+//   //   left: 40px;
+//         width: 500px;
+//   //   }
+// }
 
 
 

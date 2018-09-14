@@ -21,23 +21,23 @@
           <%#= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
-              <%= link_to "../pages/about" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Michael") %>
-              <% end %>
-            <li>
-              <%= link_to "../pages/coding" do %>
-                <i class="fas fa-code"></i>  <%= t(".coding", default: "Coding") %>
-              <% end %>
-            </li>
-            </li>
-            <li>
-              <%= link_to "../pages/making" do %>
-                <i class="fas fa-wrench"></i>  <%= t(".making", default: "Making") %>
+              <%= link_to "../pages/contact" do %>
+                <i class="fa fa-user"></i>  <%= t(".contact", default: "Contact & CV") %>
               <% end %>
             </li>
             <li>
-              <%= link_to "../pages/modelling" do %>
-                <i class="fas fa-camera-retro"></i>  <%= t(".modelling", default: "Modelling") %>
+              <%= link_to "https://www.instagram.com/michaelwongsilversmith/", target: :"_blank" do %>
+                <i class="fab fa-instagram"></i>  <%= t(".instagram", default: "Instagram") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "https://github.com/michael-w0ng", target: :"_blank" do %>
+                <i class="fab fa-github"></i>  <%= t(".github", default: "Github") %>
+              <% end %>
+            </li>
+             <li>
+              <%= link_to "https://www.linkedin.com/in/michael-w0ng", target: :"_blank" do %>
+                <i class="fab fa-linkedin"></i>  <%= t(".linkedin", default: "LinkedIn") %>
               <% end %>
             </li>
           </ul>

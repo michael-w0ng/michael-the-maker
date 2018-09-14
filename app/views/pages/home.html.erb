@@ -1,6 +1,8 @@
 <div class="site-wrapper">
 
-  <div id="banner">
+<% banner_array = ['https://res.cloudinary.com/dfowktpgu/image/upload/v1536511700/coding.jpg', 'https://res.cloudinary.com/dfowktpgu/image/upload/v1536511669/workshop.jpg', 'https://res.cloudinary.com/dfowktpgu/image/upload/v1536511693/teaching.jpg'] %>
+
+  <div id="banner" style="background-image: url(<%= banner_array.sample %>)">
     <div class="header-container">
       <div class="row intro">
         <h1>Michael Wong</h1>
@@ -21,11 +23,11 @@
   <div>
     <%= render 'shared/navbar' %>
 
-      <div class="container info">
+      <div class="container-cards info">
         <!-- <div> -->
-          <div class="skill-cards">
+          <div class="skill-cards row">
             <%#= link_to "../pages/coding" do %>
-            <div class="skills col-xs-auto col-md-3 col-lg-3" >
+            <div class="skills col-xs-12 col-md-3 col-lg-3" >
               <span class="fa-stack fa-3x">
                 <!-- <i class="fa fa-square fa-stack-2x" style="color:none"></i> -->
                 <i class="fa fa-code fa-stack-1x fa-inverse"></i>
@@ -35,7 +37,7 @@
             </div>
             <%# end %>
             <%#= link_to "../pages/making" do %>
-            <div class="skills col-xs-auto col-md-3 col-lg-3">
+            <div class="skills col-xs-12 col-md-3 col-lg-3">
               <span class="fa-stack fa-3x">
                <!--  <i class="fa fa-square fa-stack-2x" style="color:Tomato"></i> -->
                 <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
@@ -45,7 +47,7 @@
             </div>
             <%# end %>
             <%#= link_to "../pages/teaching" do %>
-            <div class="skills col-xs-auto col-md-3 col-lg-3">
+            <div class="skills col-xs-12 col-md-3 col-lg-3">
               <span class="fa-stack fa-3x">
                 <!-- <i class="fa fa-square fa-stack-2x" style="color:Tomato"></i> -->
                 <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
@@ -63,45 +65,60 @@
     <div class="container images">
       <div>
         <h3>Folio</h3>
-        <a href="http://swapmydosh.com">
-          <%= image_tag "SMD.png", height: 350, class: "home-image SMD"%>
-        </a>
-        <%= image_tag "On_Purpose.png", height: 350, class: "home-image" %>
+        <div class="scrolling-wrapper">
+          <div class="image-card">
+            <a href="http://swapmydosh.com" target="_blank">
+              <%= image_tag("SMD.png", height: 350, class: "home-image SMD")%>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://boards-r-us.herokuapp.com/" target="_blank">
+              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536929772/Screen_Shot_2018-09-14_at_2.55.42_pm.png", height: 350, class: "home-image" %>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+              <%= image_tag "On_Purpose.png", height: 350, class: "home-image" %>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928820/ON_PURPOSE_046_copy.jpg", height: 350, class: "home-image" %>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928816/ON_PURPOSE_039_copy.jpg", height: 350, class: "home-image" %>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928805/ON_PURPOSE_015_copy.jpg", height: 350, class: "home-image" %>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928805/ON_PURPOSE_008_copy.jpg", height: 350, class: "home-image" %>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928816/ON_PURPOSE_044_copy.jpg", height: 350, class: "home-image" %>
+            </a>
+          </div>
+          <div class="image-card">
+            <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">
+              <%= image_tag "https://res.cloudinary.com/dfowktpgu/image/upload/v1536928818/ON_PURPOSE_045_copy.jpg", height: 350, class: "home-image" %>
+            </a>
+          </div>
+
+        </div>
       </div>
     </div>
 
-    <div class="container info">
-      <div class="row">
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      </div>
+    <div>
+      <%= render 'shared/footer' %>
     </div>
+
   </div>
 </div>
