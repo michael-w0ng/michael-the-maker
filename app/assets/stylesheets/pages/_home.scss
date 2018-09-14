@@ -362,7 +362,7 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 551px) and (max-width: 800px) and (orientation: landscape) {
  .intro {
   position: absolute;
   top: 100px;
