@@ -1,13 +1,21 @@
 <%= render 'shared/navbar' %>
 <div class="container">
-  <h1>Contact</h1>
-    <%= image_tag("https://res.cloudinary.com/dfowktpgu/image/upload/v1536933571/Image_from_iOS_2_copy_2.jpg", height: 350, class: "")%>
-  <p>You're more than welcome to reach out via <a href="https://www.linkedin.com/in/michael-w0ng" target="_blank">LinkedIn</a> or <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">Instagram</a> otherwise <a href="mailto:mail@michaelwongsilversmith.com">Email Me</a>!</p>
-
   <div>
-    <%= link_to "Download CV", download_pdf_path  %>
+    <h2>Find me here:</h2>
+    <a href="tel:+61480171414" target="_blank"><h4>Phone</h4></a>
+    <a href="mailto:mail@michaelwong.xyz" target="_blank"><h4>Email</h4></a>
+    <a href="https://wa.me/61404880607" target="_blank"><h4>WhatsApp</h4></a>
+    <a href="weixin://dl/chat?mslwong" target="_blank"><h4>WeChat</h4></a>
+    <a href="https://www.linkedin.com/in/michael-w0ng" target="_blank"><h4>LinkedIn</h4></a>
+    <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank"><h4>Instagram</h4></a>
   </div>
-
+  <!-- <h1>Contact</h1>
+    <#%= image_tag("https://res.cloudinary.com/dfowktpgu/image/upload/v1536933571/Image_from_iOS_2_copy_2.jpg", height: 350, class: "")%>
+  <p>You're more than welcome to reach out via <a href="https://www.linkedin.com/in/michael-w0ng" target="_blank">LinkedIn</a> or <a href="https://www.instagram.com/michaelwongsilversmith/" target="_blank">Instagram</a> otherwise <a href="mailto:mail@michaelwongsilversmith.com">Email Me</a>!</p>
+ -->
+  <h4>
+    <%= link_to "Download CV", download_pdf_path  %>
+  </h4>
 </div>
 
 <%= render 'shared/footer' %>
